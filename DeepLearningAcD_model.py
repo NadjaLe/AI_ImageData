@@ -21,8 +21,8 @@ from tensorflow.keras.layers import Dense, Flatten, Conv3D, MaxPooling3D, Dropou
 from tensorflow.keras.utils import to_categorical
 
 
-AcD = np.load("AcD_uncompressed_2channels_200.npy",mmap_mode=None, allow_pickle=True , fix_imports=True, encoding='ASCII')
-nonAcD = np.load("nonAcD_uncompressed_2channels_200.npy",mmap_mode=None, allow_pickle= True, fix_imports=True, encoding='ASCII')
+AcD = np.load("file_name_AcD.npy",mmap_mode=None, allow_pickle=True , fix_imports=True, encoding='ASCII')
+nonAcD = np.load("file_name_nonAcD.npy",mmap_mode=None, allow_pickle= True, fix_imports=True, encoding='ASCII')
 
 
 AcD_label = np.array([1 for _ in range(len(AcD))])
